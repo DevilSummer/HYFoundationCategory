@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <HYPathTool.h>
+#if __has_include(<HYTool/HYPathTool.h>)
+#import <HYTool/HYPathTool.h>
+#else
+#import "HYPathTool.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
