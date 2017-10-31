@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HYFoundationCategory"
-  s.version      = "0.0.2"
+  s.version      = "0.1.1"
   s.summary      = "HYFoundationCategory"
 
   # This description is used to generate tags and improve search results.
@@ -133,6 +133,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "HYTool", "~> 0.1.0"
+  s.dependency "HYTool", "~> 0.0.3"
 
 end
