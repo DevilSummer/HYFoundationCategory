@@ -13,9 +13,21 @@
 		8ECDF26D1FA726D700477E8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDF26C1FA726D700477E8E /* Assets.xcassets */; };
 		8ECDF2701FA726D700477E8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECDF26E1FA726D700477E8E /* LaunchScreen.storyboard */; };
 		8ECDF2731FA726D700477E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2721FA726D700477E8E /* main.m */; };
+		8ECDF28C1FA72A7200477E8E /* NSString+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF27B1FA7293700477E8E /* NSString+HYCategory.m */; };
+		8ECDF28D1FA72A7500477E8E /* NSArray+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF27E1FA7294600477E8E /* NSArray+HYCategory.m */; };
+		8ECDF28E1FA72A7700477E8E /* NSData+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2831FA7294700477E8E /* NSData+HYCategory.m */; };
+		8ECDF28F1FA72A7900477E8E /* NSDictionary+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF27C1FA7294600477E8E /* NSDictionary+HYCategory.m */; };
+		8ECDF2901FA72A7B00477E8E /* NSObject+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2811FA7294700477E8E /* NSObject+HYCategory.m */; };
+		8ECDF2911FA72A7F00477E8E /* NSAttributedString+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2881FA7296500477E8E /* NSAttributedString+HYCategory.m */; };
+		8ECDF2921FA72A8100477E8E /* NSDate+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF28B1FA7296500477E8E /* NSDate+HYCategory.m */; };
+		8ECDF2931FA72A8400477E8E /* NSFileManager+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2841FA7296500477E8E /* NSFileManager+HYCategory.m */; };
+		8ECDF2941FA72A8600477E8E /* NSNumberFormatter+HYCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDF2891FA7296500477E8E /* NSNumberFormatter+HYCategory.m */; };
+		A25EE90F6CAB3C0C155D8A55 /* libPods-HYFoundationCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5DFE08C7E21BA2F717BFE2 /* libPods-HYFoundationCategory.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0297003DD768A8AF59BA0E5A /* Pods-HYFoundationCategory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYFoundationCategory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYFoundationCategory/Pods-HYFoundationCategory.debug.xcconfig"; sourceTree = "<group>"; };
+		1C5DFE08C7E21BA2F717BFE2 /* libPods-HYFoundationCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYFoundationCategory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDF2601FA726D700477E8E /* HYFoundationCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYFoundationCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECDF2631FA726D700477E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ECDF2641FA726D700477E8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +38,25 @@
 		8ECDF26F1FA726D700477E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ECDF2711FA726D700477E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ECDF2721FA726D700477E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ECDF27A1FA7293700477E8E /* NSString+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF27B1FA7293700477E8E /* NSString+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF27C1FA7294600477E8E /* NSDictionary+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF27D1FA7294600477E8E /* NSArray+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF27E1FA7294600477E8E /* NSArray+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF27F1FA7294600477E8E /* NSDictionary+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2801FA7294700477E8E /* NSObject+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2811FA7294700477E8E /* NSObject+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF2821FA7294700477E8E /* NSData+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2831FA7294700477E8E /* NSData+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF2841FA7296500477E8E /* NSFileManager+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF2851FA7296500477E8E /* NSAttributedString+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2861FA7296500477E8E /* NSFileManager+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2871FA7296500477E8E /* NSNumberFormatter+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF2881FA7296500477E8E /* NSAttributedString+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF2891FA7296500477E8E /* NSNumberFormatter+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+HYCategory.m"; sourceTree = "<group>"; };
+		8ECDF28A1FA7296500477E8E /* NSDate+HYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+HYCategory.h"; sourceTree = "<group>"; };
+		8ECDF28B1FA7296500477E8E /* NSDate+HYCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HYCategory.m"; sourceTree = "<group>"; };
+		F02E80597AB25CF130DC79E4 /* Pods-HYFoundationCategory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYFoundationCategory.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYFoundationCategory/Pods-HYFoundationCategory.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +64,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25EE90F6CAB3C0C155D8A55 /* libPods-HYFoundationCategory.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280C8AB2B0B19BBE68ABA8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C5DFE08C7E21BA2F717BFE2 /* libPods-HYFoundationCategory.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35C67763A0ED6ED0EF700A56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0297003DD768A8AF59BA0E5A /* Pods-HYFoundationCategory.debug.xcconfig */,
+				F02E80597AB25CF130DC79E4 /* Pods-HYFoundationCategory.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8ECDF2571FA726D700477E8E = {
 			isa = PBXGroup;
 			children = (
 				8ECDF2621FA726D700477E8E /* HYFoundationCategory */,
 				8ECDF2611FA726D700477E8E /* Products */,
+				35C67763A0ED6ED0EF700A56 /* Pods */,
+				280C8AB2B0B19BBE68ABA8FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +126,24 @@
 		8ECDF2791FA727D600477E8E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8ECDF27A1FA7293700477E8E /* NSString+HYCategory.h */,
+				8ECDF27B1FA7293700477E8E /* NSString+HYCategory.m */,
+				8ECDF27D1FA7294600477E8E /* NSArray+HYCategory.h */,
+				8ECDF27E1FA7294600477E8E /* NSArray+HYCategory.m */,
+				8ECDF2821FA7294700477E8E /* NSData+HYCategory.h */,
+				8ECDF2831FA7294700477E8E /* NSData+HYCategory.m */,
+				8ECDF27F1FA7294600477E8E /* NSDictionary+HYCategory.h */,
+				8ECDF27C1FA7294600477E8E /* NSDictionary+HYCategory.m */,
+				8ECDF2801FA7294700477E8E /* NSObject+HYCategory.h */,
+				8ECDF2811FA7294700477E8E /* NSObject+HYCategory.m */,
+				8ECDF2851FA7296500477E8E /* NSAttributedString+HYCategory.h */,
+				8ECDF2881FA7296500477E8E /* NSAttributedString+HYCategory.m */,
+				8ECDF28A1FA7296500477E8E /* NSDate+HYCategory.h */,
+				8ECDF28B1FA7296500477E8E /* NSDate+HYCategory.m */,
+				8ECDF2861FA7296500477E8E /* NSFileManager+HYCategory.h */,
+				8ECDF2841FA7296500477E8E /* NSFileManager+HYCategory.m */,
+				8ECDF2871FA7296500477E8E /* NSNumberFormatter+HYCategory.h */,
+				8ECDF2891FA7296500477E8E /* NSNumberFormatter+HYCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -86,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ECDF2761FA726D700477E8E /* Build configuration list for PBXNativeTarget "HYFoundationCategory" */;
 			buildPhases = (
+				743CEC57F67C9840051F03FB /* [CP] Check Pods Manifest.lock */,
 				8ECDF25C1FA726D700477E8E /* Sources */,
 				8ECDF25D1FA726D700477E8E /* Frameworks */,
 				8ECDF25E1FA726D700477E8E /* Resources */,
+				B29C87FB9546B56D1516F7FB /* [CP] Embed Pods Frameworks */,
+				E3F305FBBB178854296C7A5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,14 +217,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		743CEC57F67C9840051F03FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B29C87FB9546B56D1516F7FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYFoundationCategory/Pods-HYFoundationCategory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F305FBBB178854296C7A5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYFoundationCategory/Pods-HYFoundationCategory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ECDF25C1FA726D700477E8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8ECDF2681FA726D700477E8E /* ViewController.m in Sources */,
+				8ECDF28E1FA72A7700477E8E /* NSData+HYCategory.m in Sources */,
+				8ECDF2901FA72A7B00477E8E /* NSObject+HYCategory.m in Sources */,
 				8ECDF2731FA726D700477E8E /* main.m in Sources */,
+				8ECDF28D1FA72A7500477E8E /* NSArray+HYCategory.m in Sources */,
+				8ECDF2911FA72A7F00477E8E /* NSAttributedString+HYCategory.m in Sources */,
+				8ECDF2931FA72A8400477E8E /* NSFileManager+HYCategory.m in Sources */,
+				8ECDF28C1FA72A7200477E8E /* NSString+HYCategory.m in Sources */,
+				8ECDF28F1FA72A7900477E8E /* NSDictionary+HYCategory.m in Sources */,
+				8ECDF2941FA72A8600477E8E /* NSNumberFormatter+HYCategory.m in Sources */,
 				8ECDF2651FA726D700477E8E /* AppDelegate.m in Sources */,
+				8ECDF2921FA72A8100477E8E /* NSDate+HYCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +413,7 @@
 		};
 		8ECDF2771FA726D700477E8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0297003DD768A8AF59BA0E5A /* Pods-HYFoundationCategory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +427,7 @@
 		};
 		8ECDF2781FA726D700477E8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02E80597AB25CF130DC79E4 /* Pods-HYFoundationCategory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
