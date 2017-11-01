@@ -65,7 +65,7 @@
     }
 }
 
-+ (BOOL)hy_isNull:(id)object{
++ (BOOL)hy_isNull:(id)object {
     if ([object isKindOfClass:[NSString class]]) {
         return [NSString hy_isNullString:object];
     } else if ([object isKindOfClass:[NSArray class]]) {
@@ -74,16 +74,18 @@
         return [NSDictionary hy_isNullDictionary:object];
     } else if ([object isKindOfClass:[NSData class]]) {
         return [NSData hy_isNullData:object];
+    } else if ([object isKindOfClass:[NSNull class]] || object == [NSNull null]) {
+        return YES;
     } else {
-        return object == nil || [object isKindOfClass:[NSNull class]] || object == [NSNull null];
+        return object == nil;
     }
 }
 
-+ (NSString *)hy_className{
++ (NSString *)hy_className {
     return NSStringFromClass([self class]);
 }
 
-- (NSString *)hy_className{
+- (NSString *)hy_className {
     return NSStringFromClass([self class]);
 }
 

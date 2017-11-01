@@ -81,11 +81,17 @@
 #pragma mark - 公用方法
 + (id)hy_objectFromData:(NSData *)data {
     if ([NSData hy_isNull:data]) return nil;
-//    if (![NSJSONSerialization isValidJSONObject:data]) return nil;
     NSError *error = nil;
-    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
     if (error) return nil;
     return result;
+    /*
+     @discussion
+     NSJSONReadingMutableContainers : 获取到的是可变的对象(NSMutableArray，NSMutableDictionary) 
+     NSJSONReadingMutableLeaves : 获取到的是可变字符串(NSMutableString)
+     NSJSONReadingAllowFragments : 允许最外层不是 NSArray 或者 NSDictionary
+     也可以设置为kNilOptions(0)不进行设置
+     */
 }
 
 + (NSData *)hy_dataFromObject:(id)object {
@@ -96,6 +102,12 @@
     if (error) return nil;
     if (![result isKindOfClass:[NSData class]]) return nil;
     return result;
+    /*
+     @discussion
+     NSJSONWritingPrettyPrinted : 带有空格，方便阅读
+     NSJSONWritingSortedKeys : 11.0之后才可以使用;
+     也可以设置为kNilOptions(0)不进行设置
+     */
 }
 
 - (id)hy_value {

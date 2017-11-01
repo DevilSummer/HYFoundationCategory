@@ -21,6 +21,35 @@
     return NO;
 }
 
+- (NSDictionary *)hy_removesKeysWithNullValues {
+    if ([NSDictionary hy_isNullDictionary:self]) return nil;
+    id result = HYDictionaryByRemovingKeysWithNullValues(self);
+    return (result && [result isKindOfClass:[NSDictionary class]]) ? result : nil;
+}
+
+static id HYDictionaryByRemovingKeysWithNullValues(id JSONObject) {
+    if ([JSONObject isKindOfClass:[NSArray class]]) {
+        NSMutableArray *mutableArray = [NSMutableArray array];
+        for (id value in (NSArray *)JSONObject) {
+            [mutableArray addObject:HYDictionaryByRemovingKeysWithNullValues(value)];
+        }
+        return mutableArray;
+    } else if ([JSONObject isKindOfClass:[NSDictionary class]]) {
+        NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:JSONObject];
+        for (id <NSCopying> key in [(NSDictionary *)JSONObject allKeys]) {
+            id value = (NSDictionary *)JSONObject[key];
+            if ([NSObject hy_isNull:value]) {
+                [mutableDictionary removeObjectForKey:key];
+            } else if ([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]]) {
+                mutableDictionary[key] = HYDictionaryByRemovingKeysWithNullValues(value);
+            }
+        }
+        return mutableDictionary;
+    }
+    return JSONObject;
+}
+
+
 #pragma mark - 取值
 - (nullable id)hy_objectForKey:(NSString *)aKey {
     if ([NSString hy_isNullString:aKey]) return nil;

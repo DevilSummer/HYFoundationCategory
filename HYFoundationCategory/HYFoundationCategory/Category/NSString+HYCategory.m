@@ -17,10 +17,15 @@
 + (BOOL)hy_isNullString:(NSString *)string {
     if (string == nil ||
         string.length == 0 ||
-        [string isEqualToString:@"null"] ||
         [string isEqualToString:@"NULL"] ||
-        [string isEqualToString:@"<null>"] ||
+        [string isEqualToString:@"Null"] ||
+        [string isEqualToString:@"null"] ||
+        [string isEqualToString:@"(NULL)"] ||
+        [string isEqualToString:@"(Null)"] ||
+        [string isEqualToString:@"(null)"] ||
         [string isEqualToString:@"<NULL>"] ||
+        [string isEqualToString:@"<Null>"] ||
+        [string isEqualToString:@"<null>"] ||
         [string isKindOfClass:[NSNull class]] ||
         string == NULL) {
         return YES;

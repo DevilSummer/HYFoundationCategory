@@ -26,6 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)hy_isNullDictionary:(nullable NSDictionary *)dict;
 
+/**
+ 过滤字典中值为空的键值对
+
+ @return 处理后的字典
+ */
+- (NSDictionary *)hy_removesKeysWithNullValues;
+
 #pragma mark - 取值
 /**
  自定义取值方法
